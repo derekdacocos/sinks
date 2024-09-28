@@ -1,35 +1,67 @@
-/* Outdated CSS */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-h1 {
-    margin: 0;
+header {
+    background-color: #cccccc;
+    text-align: center;
+    padding: 20px;
 }
 
-ul {
+nav {
+    background-color: #333333;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
     margin: 0;
     padding: 0;
+    justify-content: center;
 }
 
-li {
-    margin: 0;
-    padding: 0;
+nav li {
+    margin: 0 15px;
 }
 
-p {
-    margin: 0;
-    padding: 0;
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
 }
 
-img {
+nav a:hover {
+    background-color: #575757;
+}
+
+main {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+section {
+    padding: 20px;
+    border: 1px solid #cccccc;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+section img {
     width: 100%;
     height: auto;
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
+footer {
+    background-color: #cccccc;
+    text-align: center;
+    padding: 10px;
 }
